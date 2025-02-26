@@ -1,0 +1,206 @@
+html {
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, p, li {
+    color: #404040;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 1.5px #2d5986 solid;
+    background-color: #d6e0f5;
+}
+
+.nav-div {
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 500px;
+}
+
+.name-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.name-menu p {
+    text-align: center;
+    text-decoration: none;
+    color:#2d5986;
+    font-size: 22px;
+    padding: 10px 10px 10px 5px;
+}
+
+.menu a {
+    text-align: center;
+    text-decoration: none;
+    color:#2d5986;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+}
+
+.menu a:hover, a:focus {
+    color: #4080bf;
+}
+
+.main {
+    width: 75%;
+    max-width: fit-content;
+    margin-inline: auto;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0px auto;
+    padding-top: 50px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.wrapper-1 {
+    display: inline-block;
+}
+
+.wrapper-1 h1 {
+    font-size: 33px;
+    padding: 35px 0px 30px 0px;
+}
+
+.me-pic {
+    display: flex;
+    margin-top: 10px;
+    padding: 40px 80px 40px 60px;
+    width: 375px;
+    height: 315px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+li {
+    line-height: 1.25;
+}
+
+span a {
+    color:#2d5986;
+    text-decoration: none;
+}
+
+span a:hover, a:focus{
+    color: #4775d1;
+}
+
+.contact-container {
+    padding: 30px 0px 60px 0px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 0%;
+}
+
+.contact-container p {
+    color: #2d5986;
+}
+
+.contact-container a {
+    color:#2d5986;
+    text-decoration: none;
+    padding-top: 3px;
+}
+
+.contact-container a:hover, a:focus {
+    color: #4775d1;
+}
+
+#footer-stuff {
+    border-top: 1.5px #2d5986 solid;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 30px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+    background-color: #d6e0f5;
+}
+
+#footer-stuff p {
+    color:#2d5986;
+}
+
+.about-work {
+    width: 800px;
+    height: 1120px;
+    margin-bottom: 80px;
+}
+
+.cards-container {
+    margin: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cards {
+    border: 0.5px #404040 solid;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 15px;
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+}
+
+.cards-container div:hover {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.cards h3, h4 {
+    padding-bottom: 10px;
+}
+
+.cards h4 {
+    font-size: small;
+}
+
+.cards ul {
+    padding-left: 20px;
+}
+
+.cards li {
+    font-size: smaller;
+    padding: 10px 0px 0px 0px;
+    color: grey;
+}
+
+.cards-date {
+    color: #e699cc;
+    font-style: italic;
+    font-size: smaller;
+}

@@ -1,0 +1,51 @@
+.header-color{
+    background-color: #99cc00; 
+    padding: 50px;
+}
+
+.footer-color{
+    background-color: #404040;
+    position: absolute;
+    padding: 50px;
+    margin: auto;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.elm{
+    background-color: blanchedalmond;
+    margin: auto;
+    display: inline-block;
+    padding: 70px;
+    margin: 2rem auto;
+    margin-left: 200px;
+    vertical-align: middle;
+}
+
+.header-elm {
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-stuff{
+    font-weight: bold;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+.footer-stuff{
+    color: white;
+}
+
+.whoa-pic {
+    height: 50px;
+    width: 60px;
+    margin-right: 60px;
+    margin-bottom: 0px;
+    background-color: white;
+    padding: 4px;
+    border-style: solid;
+    border-width: 3px;
+}

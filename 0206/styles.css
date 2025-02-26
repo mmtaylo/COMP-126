@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.menu {
+    background-color: #787878;
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+}
+
+.menu li {
+    margin: 10px;
+    display: inline-block;
+}
+
+.menu a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+a:hover, a:focus {
+    background-color: #484848;
+}
