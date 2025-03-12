@@ -1,0 +1,40 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+main{
+    font-family: Avenir, Roboto, Helvetica, san-serif;
+    font-size: 0.8rem;
+}
+
+.deals {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
+
+.sale-item {
+    border: 1px grey solid;
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+    margin: 8px 8px;
+}
+
+img {
+    order: -2;
+    height: 100px;
+    width: 150px;
+    align-self: center;
+}
+
+button{
+    background: teal;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: auto;
+}

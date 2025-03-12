@@ -4,14 +4,15 @@
 
 .container {
     display: grid;
-    height: 400px;
+    height: 500px;
     width: 100vh;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "one three"
     "two four"
     ;
+    border: 1px solid red;
 }
 
 .box {
@@ -44,8 +45,8 @@
 
 .mini {
     display: grid;
-    height: 65px;
-    width: 255px;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
     grid-template-rows: repeat(2, 100px);
     grid-template-columns: repeat(2, 1fr);
@@ -75,13 +76,9 @@
     margin: 5px;
 }
 
-@media screen and (max-width: 500px){
+@media  (min-width: 500px) {
     .container {
-        display: grid;
-        height: 400px;
-        width: 100vh;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
         "one three"
         "two two"
