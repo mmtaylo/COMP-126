@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TaylorMA4</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="img" href="images/">
+    <link rel="stylesheet" href="responsive-nav.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="responsive-nav.js"></script>
+    <script src="responsive-nav.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <header>
+      <h1 class="marvelous"> a marvelous website </h1>
+      <nav class="nav-collapse new-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main">
+
+      <div class="top">
+        <div class="intro card">
+          <h1>Welcome.</h1>
+          <h2>We're glad you're here.</h2>
+          <button class="learn-more">LEARN MORE</button>
+        </div>
+        <div class="form">
+          <form class="card second" onsubmit="return valid(email)">
+            <p>Join our mailing list for updates!</p>
+            <div class="inputs">
+              <label for="your-name">Your name<span>*</span></label>
+              <input id="your-name" type="text" name="user-first" required
+                oninvalid="this.setCustomValidity('This field is required.')"
+                oninput="this.setCustomValidity('')">
+              <label for="email">Email<span>*</span></label>
+              <input id="email" type="email" name="email" required
+                oninvalid="this.setCustomValidity('This field is required.')"
+                oninput="this.setCustomValidity('')">
+              <button>
+                <div class="transition"></div>
+                <div class="submit">SUBMIT</div>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="card bag-snail" title="This is an image of a snail with a bag."></div>
+        <div class="card comp-slug" title="This is an image of a slug with a computer."></div>
+        <div class="card cuc-snail" title="This is an image of a snail eating a cucumber."></div>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>&#169; comp 126</p>
+    </footer>
+
+    <script>
+      var navigation = responsiveNav(".nav-collapse", {
+        animate: true,                    // Boolean: Use CSS3 transitions, true or false
+        transition: 284,                  // Integer: Speed of the transition, in milliseconds
+        label: "Menu",                    // String: Label for the navigation toggle
+        insert: "after",                  // String: Insert the toggle before or after the navigation
+        customToggle: "",                 // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative",              // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+        init: function(){},               // Function: Init callback
+        open: function(){},               // Function: Open callback
+        close: function(){}               // Function: Close callback
+      });
+      if (window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+      }
+      function valid(email) {
+        const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return pattern.test(email);
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".bag-snail, .comp-slug, .cuc-snail, .inputs button").forEach((element) => {
+          element.addEventListener("mouseenter", () => {
+           element.classList.add("hovered");
+          });
+        });
+      });
+    </script>
+    
+  </body>
+</html>
